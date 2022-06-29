@@ -1,7 +1,7 @@
 // function checkStorage(available, ordered) {
 //     let message;
 //     // Change code below this line
-//    if (available >= ordered) { 
+//    if (available >= ordered) {
 //       message = 'Order is processed, our manager will contact you.';
 //     } else {
 //       message = 'Not enough goods in stock!';
@@ -59,9 +59,9 @@
 //   // Change code below this line
 // if (totalSpent >= 50000) {
 // discount = GOLD_DISCOUNT;
-// } else if (totalSpent >= 20000 || totalSpent < 50000) {  
+// } else if (totalSpent >= 20000 || totalSpent < 50000) {
 //   discount = SILVER_DISCOUNT;
-// } else if (totalSpent >= 5000 || totalSpent < 20000) {  
+// } else if (totalSpent >= 5000 || totalSpent < 20000) {
 //   discount = BRONZE_DISCOUNT;
 // } else {
 //   discount = BASE_DISCOUNT;
@@ -105,7 +105,7 @@
 // console.log(message)
 //   return message;
 // }
-// getNameLength("Poly") 
+// getNameLength("Poly")
 
 // const productName = "Repair droid";
 // console.log(productName[0]); // "R"
@@ -204,13 +204,65 @@
 
 // console.log (question)
 
-function checkForName(fullName, name) {
-  const result = fullName.toLowerCase().includes(name.toLowerCase()); // Change this line
+// function checkForName(fullName, name) {
+//   const result = fullName.toLowerCase().includes(name.toLowerCase()); // Change this line
 
-  console.log(result)
-   return result;
+//   console.log(result)
+//    return result;
   
- }
+//  }
 
 
- checkForName('Egor Kolbasov', 'Egor') 
+//  checkForName('Egor Kolbasov', 'Egor')
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// // Для чисел меньше чем порог срабатывает continue, выполнение тела прекращается
+// // и управление передаётся на следующую итерацию.
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
+// }
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// // Для чисел меньше чем порог срабатывает continue, выполнение тела прекращается
+// // и управление передаётся на следующую итерацию.
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
+// }
