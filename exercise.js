@@ -238,7 +238,7 @@
 //   }
 
 //   console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
-// }
+// // }
 // const clients = ["Mango", "Ajax", "Poly"];
 
 // for (let i = 0; i < clients.length; i += 1) {
@@ -266,3 +266,46 @@
 
 //   console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
 // }
+// const friends =['a', 'b', 'c']
+
+// for (let friend of friends) {
+//   friend += '22'
+//   console.log(friend)
+// }
+// console.log(friends)
+
+// for (let i = 0; i < friends.length; i -= 1) {
+//   friends[i] += '22'
+// }
+// console.log(friends)
+
+// const words = ["JavaScript", "это", "интересно"];
+// console.log(words.join("")); // "JavaScriptэтоинтересно"
+// console.log(words.join(" ")); // "JavaScript это интересно"
+// console.log(words.join("-"));
+
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Проверяем наличие элемента
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.pop(2)); //  5
+// console.log(numbers); // [1, 2, 3, 4]
+
+// function checkStorage(available, ordered) {
+  
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!" 
+//   }
+// return "The order is accepted, our manager will contact you";
+  
+// }
+// checkStorage(100, 130)
