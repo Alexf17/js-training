@@ -158,3 +158,75 @@
 //     console.log(newArr)
 //   }
 // getCommonElements([1, 2, 3], [2, 4])
+
+// function getEvenNumbers(start, end) {
+   
+//   let evenNumbers = []
+//   for (let i = start; i <= end; i += 1) {
+
+//   if (i % 2 === 0) evenNumbers.push(i)
+// }
+// console.log(evenNumbers)
+// }
+// getEvenNumbers(2, 5)
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return number;
+//     }
+//   }
+// }
+// findNumber(2, 6, 5)
+
+// function includes(array, value) {
+//   // Change code below this line
+// for (element of array) {
+//     if (element === value) {
+//     return true
+//   }
+  
+// }
+// return false
+//   // Change code above this line
+// }
+
+// includes([1, 2, 3, 4, 5], 3)
+// includes(["apple", "plum", "pear", "orange"], "kiwi")
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+
+// for (const key of keys) {
+//   // Ключ
+//   console.log(key);
+//   // Значение свойства
+//   // console.log(book[key]);
+// }
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+const values = [];
+
+for ( key in apartment) {
+  if (Object.hasOwnProperty.call(apartment, key)) {
+    values.push(apartment[key])
+    keys.push(key)
+  }
+  
+  
+}
+console.log(keys, values)
