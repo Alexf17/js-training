@@ -1,12 +1,12 @@
 // function checkStorage(available, ordered) {
-  
+
 //   if (ordered === 0) {
 //     return "Your order is empty!";
 //   } if (ordered > available) {
 //     return "Your order is too large, not enough goods in stock!"
 //   }
 // return "The order is accepted, our manager will contact you";
-  
+
 // }
 // checkStorage(100, 130)
 
@@ -39,7 +39,7 @@
 
 // function getExtremeElements(array) {
 //   // let first = array[0]
-  
+
 //   // let second = array.length-1
 
 //   // let result = [first, second]
@@ -59,7 +59,7 @@
 // words = message.split(delimeter)
 //   // Change code above this line
 //   return words;
-  
+
 // }
 // console.log(words)
 // splitMessage("Mango hurries to the train", " ")
@@ -101,7 +101,7 @@
 // }
 
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-  
+
 // const planets = ["Earth", "Mars", "Venus"];
 
 // for (let i = 0; i < planets.length; i += 1) {
@@ -114,9 +114,9 @@
 //   for (let i = 0; i < splitString.length; i += 1) {
 //     if (splitString[i].length > mostLong.length) {
 //       mostLong = splitString[i]
-     
+
 //     }
-    
+
 //   }
 
 // console.log(mostLong)
@@ -129,7 +129,7 @@
 //   // Change code below this line
 //   for (let i = min; i <= max; i += 1) {
 //   numbers.push(i)
-  
+
 // }
 //   // Change code above this line
 //   console.log(numbers);
@@ -142,7 +142,7 @@
 //   for (let i = 0; i < numbers.length; i += 1) {
 //     if (numbers[i] > value) numb.push(numbers[i])
 //       // numb.push(numbers[i])
-  
+
 //  }
 // console.log(numb)
 // }
@@ -154,13 +154,13 @@
 //   for (let i = 0; i < array1.length; i += 1) {
 //     if (array2.includes(array1[i])) newArr.push(array1[i])
 //     }
-    
+
 //     console.log(newArr)
 //   }
 // getCommonElements([1, 2, 3], [2, 4])
 
 // function getEvenNumbers(start, end) {
-   
+
 //   let evenNumbers = []
 //   for (let i = start; i <= end; i += 1) {
 
@@ -189,7 +189,7 @@
 //     if (element === value) {
 //     return true
 //   }
-  
+
 // }
 // return false
 //   // Change code above this line
@@ -213,20 +213,90 @@
 //   // console.log(book[key]);
 // }
 
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-const keys = [];
-const values = [];
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
 
-for ( key in apartment) {
-  if (Object.hasOwnProperty.call(apartment, key)) {
-    values.push(apartment[key])
-    keys.push(key)
-  }
-  
-  
-}
-console.log(keys, values)
+// for ( key in apartment) {
+//   if (Object.hasOwnProperty.call(apartment, key)) {
+//     values.push(apartment[key])
+//     keys.push(key)
+//   }
+// }
+// console.log(keys, values)
+
+// function countProps(object) {
+//     let propCount = 0;
+//    for (let key in object) {
+//      let nums = object.hasOwnProperty(key);
+//      console.log(nums) ;
+//    }
+//  }
+//  countProps({ name: "Mango", age: 2 })
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+// for (const key of Object.values(salaries)) {
+//     totalSalary +=key
+// }
+//   // Change code above this line
+//   console.log(totalSalary) ;
+// }
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// function getProductPrice(productName) {
+//   // Change code below this line
+//     for (product of products) {
+//         if (productName === product.name) {
+//            console.log(product.price)
+//        }
+//     }
+//     console.log(null)
+// }
+// getProductPrice("Radr")
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   // console.log(firstNumber); // Значение первого аргумента
+//   // console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//     for (product of products) {
+//     console.log([product[propName]])
+// }
+
+
+//   // Change code above this line
+// }
+// getAllPropValues("nam")
+
+// function multiply(...args) {
+//   console.log(args); // массив всех аргументов
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
