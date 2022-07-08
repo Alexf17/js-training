@@ -218,6 +218,8 @@
 //   rating: 4,
 //   price: 2153,
 // };
+
+// apartment.descr = apartment.name
 // const keys = [];
 // const values = [];
 
@@ -227,7 +229,7 @@
 //     keys.push(key)
 //   }
 // }
-// console.log(keys, values)
+// console.log(apartment)
 
 // function countProps(object) {
 //     let propCount = 0;
@@ -300,3 +302,166 @@
 // multiply(1, 2);
 // multiply(1, 2, 3);
 // multiply(1, 2, 3, 4);
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+
+// let result = ["111"]
+//   for (product of products) {
+//     if (!product[productName]) return result
+    
+//     // result = product[price] * product[quantity]
+//     console.log(result)
+// }
+//   // Пиши код выше этой строки
+// }
+// calculateTotalPrice("111")
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+
+// let result = 0
+//  for (product of products) {
+//    if (product.name === productName) {
+//      return resul = product.price * product.quantity
+//    }
+
+//   }
+//   return result
+// // console.log(result)
+// // console.log(result)
+
+//   // Пиши код выше этой строки
+// }
+// console.log(calculateTotalPrice("Rdar"))
+
+
+// let sum = 0
+// function add(...args) {
+
+//   for (let i = 0; i < args.length; i++) {
+//     sum += args[i];
+    
+//     // summ += args
+//     // console.log(summ)
+//     // Change code above this line
+//   }
+//   console.log(sum)
+// }
+// add(32, 6, 13, 19, 8)
+// add(74, 11, 62, 46, 12, 36)
+
+// function addOverNum(first, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (first < arg) total += arg;
+//   }
+//   console.log(total);
+//   // Change code above this line
+// }
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+
+// function findMatches(first, ...args) {
+//   const matches = []; // Don't change this line
+//  for (const arg of args) {
+//     if (first.includes(arg)) matches.push(arg);
+//   }
+//   // Change code above this line
+//   console.log(matches);
+// }
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+
+//     // books.splice(0,1,newName)
+
+//     // Change code above this line
+//   },
+// };
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const bookIndex = this.potions.indexOf(potionName);
+
+//     this.potions.splice(bookIndex,1)
+
+//     // Change code above this line
+//   },
+// };
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+
+//     const bookIndex = this.potions.indexOf(oldName);
+
+//     this.potions.splice(bookIndex,1,newName)
+
+//     // Change code above this line
+//   },
+// };
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+     for (const potion of this.potions) {
+    
+    if (potion.name === newPotion.name) console.log(`Error! Potion ${newPotion} is already in your inventory!`);
+      
+    }
+    this.potions.push(newPotion);
+console.log(potions)
+  },
+  // removePotion(potionName) {
+  //   const potionIndex = this.potions.indexOf(potionName);
+
+  //   if (potionIndex === -1) {
+  //     return `Potion ${potionName} is not in inventory!`;
+  //   }
+
+  //   this.potions.splice(potionIndex, 1);
+  // },
+  // updatePotionName(oldName, newName) {
+  //   const potionIndex = this.potions.indexOf(oldName);
+
+  //   if (potionIndex === -1) {
+  //     return `Potion ${oldName} is not in inventory!`;
+  //   }
+
+  //   this.potions.splice(potionIndex, 1, newName);
+  // },
+  // // Change code above this line
+};
+    
+atTheOldToad.addPotion({ name: "Speed potion", price: 620 })
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
