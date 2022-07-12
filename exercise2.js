@@ -422,46 +422,99 @@
 //   },
 // };
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
+// }
+// styles.push("Рок")
+// console.log(styles.indexOf("Блюз"))
+// args(11, 22, "lndfds")
 
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(newPotion) {
-     for (const potion of this.potions) {
+//Напишите скрипт который заменяет регистр каждого символа
+//в стороке на противоположный
+//Например 'JavaScript' должен вернуть 'jAVAsCRIPT'
+
+//Напишите функцию findTheColor()
+//которая принимает название цвета
+//определяет его наличие в массиве
+//если цвет есть, усталавливет его как фон документа
+//если цвета нет выводит console.error('Такой цвет не найден');
+//и устанавливает цвет документа красный
+// document.body.style.background = 'red';
+//const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
+
+
+//Напиши скрипт, который для объекта user,
+//последовательно:
+//1 добавит поле mood со значением 'happy'
+//2 заменит hobby на 'skydiving'
+//3 заменит значение premium на false
+//4 выводит содержимое объекта users в фортмате
+//ключ:значение используя Object.keys() и for...of
+// const user = {
+//   name: "John",
+//   age: 20,
+//   hobby: "tenis",
+//   premium: true,
+// };
+
+//Создайте объект calculator с тремя методами
+//read(a, b) - принимает два аргумента и сохраняет их
+//как свойства объекта
+//sum() возвращает сумму сохраненных значений
+//mult() перемножает сохраненные значения и возвращает результат
+
+// const calculator = {
+//   read(a, b) {},
+//   sum() {},
+//   mult() {},
+// };
+
+
+//Напишите функцию updateObject, которая принимает объект и возвращает
+//новый объект без указанного параметра
+//Ожидаемый результат ({a: 1. b: 2}, 'b') => {a: 1}
+
+// Напишите функцию updateObject, которая принимает объект и возвращает
+//новый объект без указанных параметров
+//Ожидаемый результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+ 
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+  
+//       if (potionName === this.potions[i].name) {
+//         return this.potions.splice([i], 1);
+//       }
+//     }
+//    return `Potion ${potionName} is not in inventory!`;
     
-    if (potion.name === newPotion.name) console.log(`Error! Potion ${newPotion} is already in your inventory!`);
-      
-    }
-    this.potions.push(newPotion);
-console.log(potions)
-  },
-  // removePotion(potionName) {
-  //   const potionIndex = this.potions.indexOf(potionName);
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (oldName === this.potions[i].name) {
+//         return this.potions[i].name = newName
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
 
-  //   if (potionIndex === -1) {
-  //     return `Potion ${potionName} is not in inventory!`;
-  //   }
-
-  //   this.potions.splice(potionIndex, 1);
-  // },
-  // updatePotionName(oldName, newName) {
-  //   const potionIndex = this.potions.indexOf(oldName);
-
-  //   if (potionIndex === -1) {
-  //     return `Potion ${oldName} is not in inventory!`;
-  //   }
-
-  //   this.potions.splice(potionIndex, 1, newName);
-  // },
-  // // Change code above this line
-};
-    
-atTheOldToad.addPotion({ name: "Speed potion", price: 620 })
-// atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
+// };
+// // atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
+// // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+// console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"))
+// console.log(atTheOldToad.getPotions())
