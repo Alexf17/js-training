@@ -309,3 +309,8 @@
   
 // }
 // checkStorage(100, 130)
+
+// const User = function (name) {
+//     this.name = name
+// }
+// console.log(new User("Mango"));
