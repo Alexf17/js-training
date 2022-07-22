@@ -259,3 +259,134 @@
 //   .filter(name => name.rating >= MIN_BOOK_RATING)
 //   .map(auttors => auttors.author).sort((a, b) => a.localeCompare(b))
 // console.log(names)
+
+// const customer = {
+//     username: "Mango",
+//     balance: 24000,
+//     discount: 0.1,
+//     orders: ["Burger", "Pizza", "Salad"],
+//     // Change code below this line
+//     getBalance() {
+//         return this.balance;
+//     },
+//     getDiscount() {
+//         return this.discount;
+//     },
+//     setDiscount(value) {
+//         this.discount = value;
+//     },
+//     getOrders() {
+//         return this.orders;
+//     },
+//     addOrder(cost, order) {
+//         this.balance -= cost - cost * this.discount;
+//         this.orders.push(order);
+//     },
+//     // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+
+// function checkObj(obj, checkProp) {
+//   // Змініть код лише під цим рядком
+//   return obj.hasOwnProperty(checkProp) ? obj[checkProp] : "Not Found"
+//   // Змініть код лише над цим рядком
+// }
+// console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"))
+
+
+// const myPlants = [
+//   {
+//     type: "flowers",
+//     list: [
+//       "rose",
+//       "tulip",
+//       "dandelion"
+//     ]
+//   },
+//   {
+//     type: "trees",
+//     list: [
+//       "fir",
+//       "pine",
+//       "birch"
+//     ]
+//   }
+// ];
+
+// const secondTree = myPlants[0].list[1];
+// console.log(secondTree)
+
+
+// class Storage {
+//     constructor (item) {
+//         this.item = item
+//     }
+//     getItems() {
+//         this.item
+//     }
+//     addItem(newItem) {
+//         this.item.push(newItem)
+//     }
+//     removeItem(itemToRemove) {
+//         this.item = this.item.filter(element => element != itemToRemove)
+//     }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// // console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+// class Car {
+//     constructor(name, model) {
+//         this._model = model
+//         this.name = name
+//     }
+//     get model() {
+//         return this._model
+//     }
+//     set model(newMod) {
+//         this._model = newMod
+//     }
+// }
+// const car2 = new Car('anna', 32)
+// console.log(car2)
+// console.log(car2.model = 21)
+// console.log(car2)
+
+
+// class StringBuilder {
+//     constructor (initialValue) {
+//         this.value = initialValue
+//     }
+//     getValue () {
+//         return this.value
+//     }
+//     padEnd (str) {
+//         this.value = `${this.value}${str}` 
+//     }
+//     padStart (str) {
+//         this.value = `${str}${this.value}`
+//     }
+//     padBoth (str) {
+//         this.value = `${str}${this.value}${str}`
+//     }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
